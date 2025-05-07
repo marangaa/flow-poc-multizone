@@ -2,10 +2,9 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   basePath: "/flow", // Serve the flow app under the /flow path
-  // assetPrefix: process.env.NODE_ENV === 'production' ? 'https://your-cdn.com/flow' : undefined,
+  assetPrefix: "/flow-static", // Asset prefix to avoid conflicts with other zones
   serverActions: {
-    // Add your actual shell app domain here
-    // This should be the domain where users access your shell application
+    // Allow Server Actions from the flow app domain
     allowedOrigins: [
       // Development
       "localhost:3000",
