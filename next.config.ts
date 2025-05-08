@@ -1,9 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Remove basePath completely - we don't need it
   // The shell app will handle the /flow prefix in the URL
-  // basePath: "/flow",
   
   // Keep asset prefix for proper asset loading
   assetPrefix: "/flow-static",
